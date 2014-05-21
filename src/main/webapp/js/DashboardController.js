@@ -14,7 +14,8 @@ var dashboardApp = angular.module('dashboardApp', ['ngResource']);
 
 dashboardApp.controller('DashboardCtrl', function($scope, $http, $timeout){
 	
-	$scope.hosturl = 'http://localhost:8080/data-stream-cache/cache/cache';
+	// $scope.hosturl = 'http://localhost:8080/data-stream-cache/cache/cache';
+	$scope.hosturl = 'http://cache-kunal.rhcloud.com/cache/cache';
 	$scope.users = [];
 	
 	$scope.getUsers = function(){
